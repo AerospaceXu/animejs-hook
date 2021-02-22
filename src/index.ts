@@ -4,10 +4,10 @@ import anime, { AnimeParams, AnimeInstance } from "animejs";
 export const useAnime = (
   animeParams: AnimeParams = {}
 ): [
-  React.MutableRefObject<HTMLElement | undefined>,
+  React.MutableRefObject<HTMLElement | null>,
   React.MutableRefObject<AnimeInstance | undefined>
 ] => {
-  const animeTargetRef = useRef<HTMLElement>();
+  const animeTargetRef = useRef<HTMLElement>(null);
   const animationController = useRef<AnimeInstance>();
 
   useLayoutEffect(() => {
