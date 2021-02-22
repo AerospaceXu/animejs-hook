@@ -1,6 +1,6 @@
 {
   "name": "animejs-hook",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Encapsulation animejs`s react hooks version.",
   "main": "dist/index.js",
   "author": "AerospaceXu <aerospacexu@gmail.com>",
