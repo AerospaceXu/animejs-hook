@@ -7,7 +7,7 @@ export const useAnime = (
   React.MutableRefObject<HTMLElement | null>,
   React.MutableRefObject<AnimeInstance | undefined>
 ] => {
-  const animeTargetRef = useRef<HTMLElement>(null);
+  const animeTargetRef = useRef<any>(null);
   const animationController = useRef<AnimeInstance>();
 
   useLayoutEffect(() => {
