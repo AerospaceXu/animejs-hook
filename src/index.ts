@@ -4,7 +4,7 @@ import anime, { AnimeParams, AnimeInstance } from "animejs";
 export const useAnime = (
   animeParams: AnimeParams = {}
 ): [
-  React.MutableRefObject<HTMLElement | null>,
+  React.MutableRefObject<any>,
   React.MutableRefObject<AnimeInstance | undefined>
 ] => {
   const animeTargetRef = useRef<any>(null);
